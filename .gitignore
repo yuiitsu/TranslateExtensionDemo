@@ -1,0 +1,6 @@
+/.idea
+.DS_Store
+.project
+/.settings
+/.vs
+/node_modules

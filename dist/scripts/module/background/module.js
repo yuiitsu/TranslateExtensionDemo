@@ -1,0 +1,1 @@
+"use strict";App.module.extend("background",function(){this.init=function(){chrome.browserAction.onClicked.addListener(function(n){chrome.tabs.sendMessage(n.id,{method:"show"},function(n){})})}});

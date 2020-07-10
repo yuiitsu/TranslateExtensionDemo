@@ -1,0 +1,1 @@
+"use strict";App.event.extend("content",function(){var n=this;this.event={listenExample:function(){$("body").on("click",function(){n.module.content.show()})}}});

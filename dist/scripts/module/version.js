@@ -1,0 +1,1 @@
+"use strict";var Version={current_version:"v0.2.0",update_logs:{"v0.2.0":[],"v0.1.0":[]},check:function(){localStorage.getItem("version")!==this.current_version&&localStorage.setItem("version",this.current_version)}};$(function(){Version.check()});

@@ -1,0 +1,1 @@
+"use strict";App.module.extend("content",function(){var o=this;this.init=function(){chrome.extension.onMessage.addListener(function(e,t,n){var i=e.method;o.hasOwnProperty(i)?o[i]():o.log("method "+i+" not exist."),n("")})},this.show=function(){0===$(".ces-view-example").length&&this.view.append("content","viewExample",{name:"Guest"},$("body"))}});

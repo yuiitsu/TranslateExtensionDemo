@@ -1,0 +1,45 @@
+{
+    "manifest_version": 2,
+    "name": "Translation Extension Demo",
+    "short_name": "Translation Extension Demo",
+    "version": "0.1.0",
+    "description":"Translation Extension Demo",
+    "homepage_url": "https://www.colorgamer.com",
+    "author":"Your Name",
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
+    "background": {
+        "scripts": [
+            "scripts/lib/jquery-3.4.1.min.js",
+            "scripts/model.js",
+            "scripts/app.js",
+            "scripts/module/common/module.js",
+            "scripts/module/background/module.js",
+            "scripts/run.js"
+        ]
+    },
+    "content_scripts": [{
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+        ],
+        "js": [
+            "scripts/lib/jquery-3.4.1.min.js",
+            "scripts/app.js",
+            "scripts/model.js",
+            "scripts/module/common/module.js",
+            "scripts/module/content/module.js",
+            "scripts/module/content/view.js",
+            "scripts/module/content/event.js",
+            "scripts/run.js"
+        ],
+        "css": [
+            "style/content.css"
+        ]
+    }],
+    "permissions": [
+        "tabs",
+        "contextMenus",
+        "http://*/*",
+        "https://*/*"
+    ]
+}
