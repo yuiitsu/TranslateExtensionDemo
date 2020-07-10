@@ -1,4 +1,6 @@
-# CEF - A simple Chrome Extension development falsework
+# Translation Extension DEMO
+
+本DEMO基于CEF，以下为CEF说明
 
 CEF是一个简单的Chrome Extension开发脚手架，它有如下功能：
 1. 模块化的结构，便于开发维护
